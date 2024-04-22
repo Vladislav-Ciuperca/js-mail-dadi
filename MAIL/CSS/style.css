@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-top: 5rem;
+    display: inline;
+    width: 400px;
+}
+
+#esito {
+    margin-top: 5rem;
+    border: 2px dashed red;
+    min-width: 200px;
+    min-height: 50px;
+}

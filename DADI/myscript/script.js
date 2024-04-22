@@ -1,4 +1,4 @@
-// alert('ciaone')
+
 const umano = document.getElementById('umano');
 const computer = document.getElementById('computer');
 const vincitore = document.getElementById('vincitore');
