@@ -8,19 +8,26 @@ const autorizzati = [
     "giorgiameloni@ufficio.com",
 ];
 
-const mail = document.getElementById("mail").value;
-const esito = document.getElementById('esito')
-
+const esito = document.getElementById('esito');
 
 function azione() {
-    if (autorizzati == mail) {
-        esito.innerHTML = "puoi entrare YAYYYYYY"
+
+    let mailFind = false
+    const mail = document.getElementById("mail").value;
+    for (let number = 0; number < autorizzati.length; number++) {
+        if (mail == autorizzati[number]) {
+            mailFind = true
+        }
+        else {
+        }
+    }
+    if (mailFind == true) {
         console.log('sei ok')
+        esito.innerHTML = "puoi entrare YAYYYYYY"
     }
     else {
-        esito.innerHTML = "non puoi entrare :'("
         console.log('vai via')
+        esito.innerHTML = "non puoi entrare :'("
     }
-}
 
-// console.log(mail)
+}
